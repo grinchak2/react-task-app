@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#app {
+  margin: 0;
+  min-height: 780px!important;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.col-left {
+  padding-top: 10px;
+  width: 20%;
+  text-align: center;
+  background-color: #2b2f3e;
+}
+
+.col-left .title1 {
+  font-size: 36px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.col-left .title2 {
+  font-size: 18px;
+  color: #808080;
+}
+
+.col-right {
+  width: 80%;
+  padding: 2%;
+  background-color: #F9F9F9;
+}
+
+.content-block .col {
+  margin: 10px;
+  padding: 15px 25px;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.add-task {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
+.add-task input {
+  display: inline-block;
+  width: calc(100% - 130px);
+}
+
+.add-task button {
+  float: right;
+  width: 120px;
+}
+
+.task {
+  position: relative;
+  padding: 10px 0;
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6;
+  cursor: pointer;
+}
+
+.task .border-active {
+  display: none;
+}
+
+.task.active .border-active {
+  position: absolute;
+  left: -25px;
+  top: 0;
+  display: inline-block;
+  height: 57px;
+  border-left: 3px solid #FF2F5A;
+}
+
+.task span {
+  display: inline-block;
+  margin-top: 5px;
+  vertical-align: top;
+}
+
+.task button {
+  float: right;
+}
+
+.task span.amount {
+  margin-left: 10px;
+  margin-top: 9px;
+  background-color: #27CCC0;
+}
+
+.comment .square {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.comment {
+  padding: 12px 0;
+  border: none;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.comment:last-child {
+  border-bottom: none
+}
+
+.comment .content {
+  display: inline-block;
+  width: calc(100% - 50px);
+  vertical-align: top;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
+.comment-add {
+  border: none;
+}
+
+.comment-add .square {
+  background-color: #E6E6E6;
+}
+
+.btn-success {
+  background-color: #27CCC0!important;
+  border-color: #27CCC0!important;
+}
+
+.btn-success:hover {
+  background-color: #21afa6!important;
+  border-color: #21afa6!important;
+}
+
+.btn-outline-danger {
+  min-width: 90px;
+}
