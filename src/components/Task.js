@@ -8,7 +8,8 @@ class Task extends React.Component {
         this.selectTaskFunc = this.selectTaskFunc.bind(this);
     }
 
-    removeTaskFunc() {
+    removeTaskFunc(e) {
+        e.stopPropagation();
         let id = this.props.id;
         this.props.removeTaskFunc(id);
     }

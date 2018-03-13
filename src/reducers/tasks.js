@@ -20,10 +20,8 @@ const tasks = (state = [], action) => {
             ]
         case 'REMOVE_TASK':
             let index = action.id;
-            state.splice(index, 1);
-            return [
-                ...state
-            ]
+            
+            return state.filter((item, idx) => idx !== index);
         case 'SELECT_TASK':
             return state.map((value, index) => {
                 if (index === parseInt(action.id, 10)) {
@@ -46,9 +44,6 @@ const tasks = (state = [], action) => {
 
                 return value;
             })
-        case 'REMOVE_COMMENT':
-            return state
-
         default:
             return state
     }
